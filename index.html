@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do Liste</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📝 To-Do Liste</h1>
+
+      <div class="eingabe-wrapper">
+        <input
+          type="text"
+          class="eingabe"
+          id="eingabe"
+          placeholder="Neue Aufgabe..."
+        />
+
+        <button id="hinzufuegen">add</button>
+      </div>
+
+      <ul id="aufgabeListe"></ul>
+      <button id="loescheErledigte" class="loeschen">Erledigte löschen</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

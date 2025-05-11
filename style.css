@@ -1,0 +1,156 @@
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  font-size: clamp(1.5rem 3vw 2rem);
+  background: url(image.png) no-repeat center center;
+  background-size: auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+/* Div container */
+.container {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 5rem;
+  border-radius: 20px;
+  box-shadow: 6px 5px 14px -5px #000000;
+  width: 50vw;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Div container */
+.eingabe-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+/* Eingabefeld */
+#eingabe {
+  width: 85%;
+  padding: 0.8rem 0.5rem;
+  margin: 1.5rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 7px 6px 10px -5px #000000;
+  font-size: 1rem;
+}
+
+/* add - Button */
+#hinzufuegen {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: hsl(142, 57%, 62%);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#hinzufuegen:hover {
+  background-color: hsl(142, 57%, 62%);
+  box-shadow: 6px 5px 14px -5px #000000;
+}
+
+#hinzufuegen:active {
+  box-shadow: none;
+}
+
+/* "Erledigte löschen" - Button */
+#loescheErledigte {
+  display: none;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background: hsl(155, 90%, 57%);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#loescheErledigte:hover {
+  background: hsl(155, 76%, 51%);
+  transform: scale(1.05);
+  box-shadow: 6px 5px 14px -5px #000000;
+}
+
+#loescheErledigte:active {
+  transform: scale(1.02);
+  box-shadow: none;
+}
+
+/* 🗑️ - Button */
+.clearBtn {
+  padding: 0.5rem 0.78rem;
+  border-radius: 10px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.clearBtn:hover {
+  transform: scale(1.05);
+}
+
+.clearBtn:active {
+  transform: scale(0.95);
+}
+
+/**/
+ul {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* li- Aufgaben */
+.aufgabe {
+  width: 83%;
+  background-color: hsl(165, 73%, 80%);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  transition: transform 0.2s ease;
+}
+
+.aufgabe:hover {
+  transform: scale(1.03);
+}
+
+.aufgabe-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1; /* Damit nimmt es den Platz zwischen Rand und Button */
+  margin-right: 1rem;
+}
+
+/* Erledigte Aufgaben markieren*/
+.erledigt {
+  text-decoration: none;
+  opacity: 0.7;
+}
