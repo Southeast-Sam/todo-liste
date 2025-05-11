@@ -1,5 +1,5 @@
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: sans-serif;
   font-size: clamp(1.5rem 3vw 2rem);
   background: url(image.png) no-repeat center center;
